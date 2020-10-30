@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="sps.css"> 
+
+</head>
+<body>
+    <div id="name"><header>Stone Paper Scissor</header></div>
+
+     <div class="button-container">
+        <p id="choice">Make your choice</p>
+         <button onclick="playgame('rock')" class="selection-button" type="button">ROCK</button>
+         <button onclick="playgame('paper')" class="selection-button" type="button">PAPER</button>
+         <button onclick="playgame('scissor')" class="selection-button" type="button">SCISSOR</button>
+        </div>
+
+      
+
+      <div class="result">
+        <div id="res" >....</div>
+      </div>
+
+      <div class="wins">
+         <div>You Won:</div>
+         <div id="uw"></div>
+         <div>Computer Won:</div>
+         <div id="cw"></div>
+      </div>
+
+      <button class="reset" onclick="reset()" type="button">Reset</button>
+
+</body>
+  <script src="script/sps.js"></script>
+</html>
