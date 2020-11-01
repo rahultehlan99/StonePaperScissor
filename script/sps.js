@@ -62,12 +62,10 @@ function showresult(x){
    console.log("showresult")
     if(x==='win')
     {   
-      document.body.style.backgroundColor = "lightgreen";
             document.getElementById('uw').innerHTML=uwins;
         document.getElementById('res').innerHTML="You Win";}
   else if(x=='lose')
-  {   document.body.style.backgroundColor = "red";
-      document.getElementById('cw').innerHTML=cwins;
+    {  document.getElementById('cw').innerHTML=cwins;
       document.getElementById('res').innerHTML="Computer win";}
   else
   {document.getElementById('res').innerHTML="It's a tie";

@@ -1,7 +1,8 @@
  body{
-    background:  #33d484;
+    background:  #8bebdb;
+    margin:25px;
  }
-
+ 
  #name {
    text-align: center;
    font-size: 4em; 
@@ -53,18 +54,52 @@
 }
 
 .wins{
-    text-align: center;
+     text-align: center; 
      padding: 20px;
+     width:250px;
      font-size: 2em;
-     margin-top:10%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top:5%;
+     position: relative;
+     background:white;
+     border-radius: 20px;
 }
 
 .reset{
-    margin: 0;
-  position: absolute;
-  margin-left: 42%;
-  margin-bottom: 5%;
+    display: block;
+  position: relative;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
    border-radius: 20px;
-   
-    font-size: 2em;
+    font-size: 2em; 
 }
+.reset .tooltiptext{
+    visibility: hidden;
+    z-index: 1;
+    width: 200px;
+    color: #fff;
+    background: black;
+    padding: 5px;
+    position: absolute;
+    border-radius: 5px;
+}
+.reset:hover .tooltiptext{
+  visibility:visible;
+}
+
+div.polariod {
+  width:fit-content;
+  background-color: thistle;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  margin: auto;
+}
+
+div.container{
+   text-align: center;
+   padding: 10px;
+}
+
