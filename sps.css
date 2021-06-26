@@ -33,21 +33,24 @@
 
 .button-container .choice-buttons{
     display: grid;
-    margin: 2% 5%;
     gap: 15px;
 }
 
 .button-container button{
-  padding:5px;
-  border: 2px solid;
-  padding: 20px;
-  border-radius: 25px;
   background: transparent;
   cursor: pointer;
   place-self: center;
   transition: all 0.8s;
+  border-style: none;
 }
 
+.button-container img{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+  border:  1px solid ;
+}
 
 .button-rock{
   grid-column: 1 / span 1;
@@ -66,7 +69,7 @@
 .button-container button:hover{
     background-color: rgb(255, 255, 255);
     transform: scale(1.5);
-    border: 2px solid black;
+    border-radius: 20%;
 }
 
  
