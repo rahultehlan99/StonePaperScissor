@@ -10,39 +10,34 @@
 </head>
 <body>
 
-    <div class="polariod">
-        <img src="images/img_5terre.jpg">
-        <div class="container">
-          Cinque Terre
-        </div>
-    </div>  
     
-    <div id="name"><header>Stone Paper Scissor</header></div>
+      <div id="name">Stone Paper Scissor Game</div>
 
-     <div class="button-container">
-        <p id="choice">Make your choice</p>
-         <button onclick="playgame('rock')" class="selection-button" type="button">ROCK</button>
-         <button onclick="playgame('paper')" class="selection-button" type="button">PAPER</button>
-         <button onclick="playgame('scissor')" class="selection-button" type="button">SCISSOR</button>
-        </div>
+      <div class="button-container">
+        
+        <p align="center" id="choice">Make your choice</p>
+
+          <div class="choice-buttons">
+            <button onclick="playgame('rock')" class="button-rock"><img src="/images/icon-rock.svg" alt="Rock">Stone</button>
+            <button onclick="playgame('paper')" class="button-paper"><img src="/images/icon-paper.svg" alt="Paper">Paper</button>
+            <button onclick="playgame('scissor')" class="button-scissor"><img src="/images/icon-scissors.svg" alt="Scissor">Scissor</button>
+          </div>
+
+      </div>
 
       
 
-      <div class="result">
-        <div id="res" >....</div>
-      </div>
+      <div class="res"></div>
 
       <div class="wins">
-         <div>You Won:</div>
-         <div id="uw"></div>
-         <div>Computer Won:</div>
-         <div id="cw"></div>
+         <div class="uw">You won: 0</div>
+         <div class="cw">Computer won: 0</div>
       </div>
 
-      <button class="reset" onclick="reset()" type="button">Reset
-       <span class="tooltiptext">Reset to zero</span>
+      <button class="reset" onclick="reset()">Reset
+       <span class="tooltiptext">Reset scores to zero</span>
       </button>
 
 </body>
-  <script src="script/sps.js"></script>
+  <script src="script.js"></script>
 </html>
